@@ -1,0 +1,7 @@
+
+cctv_bb
+	camera
+		yymmdd
+			hh
+			  frame_no
+				camera_yymmdd_hh_frame_no_0001.jpg ...

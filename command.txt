@@ -1,0 +1,10 @@
+python tracking/track.py --yolo-model yolov8n --source track.mp4 --conf 0.1 --save --classes 0 --iou 0.3 --per-class --agnostic-nms
+
+python tracking/track.py --yolo-model yolov8n --source 'rtsp://admin:!gaion3413@192.168.2.200:558/LiveChannel/2/media.smp' --conf 0.1 --save --classes 0 --iou 0.3 --per-class --agnostic-nms
+
+
+python track_stream.py --conf 0.2 --classes 0 --iou 0.3 --per-class --agnostic-nms
+
+python track_reid.py --conf 0.2 --classes 0 --iou 0.3 --per-class --agnostic-nms --reid-model weights/osnet_x0_25_msmt17.pt
+
+#python track_reid.py --source ./assets/MOT17-mini/train --yolo-model yolov8n.pt yolov8s.pt --reid-model weights/osnet_x0_25_msmt17.pt
